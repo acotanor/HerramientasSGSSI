@@ -1,3 +1,5 @@
+#!/bin/python
+
 import sys
 import os
 
@@ -120,3 +122,4 @@ while True:
             wr.write(decr)
         break
 
+os.system('clear')
