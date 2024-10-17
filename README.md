@@ -6,9 +6,9 @@ Las herramientas se encuentran en la carpeta HerramientasSGSSI/Herramientas/, mi
 
 Todas las herramientas están documentadas y poseen explicaciones que se muestran con cualquiera de los argumentos (-h, --h, -help, --help).
 
-# Descripción corta de cada herramienta:
+## Descripción corta de cada herramienta:
 
-## Criptfrec:
+### Criptfrec:
 
 Abre un entorno en la terminal con un texto cifrado (primer argumento), el progreso de descifrado (se guarda el resultado en el segundo argumento), recomendaciones de cambios de letras y un registro de los cambios efectuados.
 
@@ -18,7 +18,7 @@ Ejemplo de uso:
 ./criptfrec "/ejemplo/mensaje_cifrado.txt" "/ejemplo/output_descifrado.txt"
 ```
 
-## Steganos:
+### Steganos:
 
 Dados un directorio con imágenes, un hash a comparar y la contraseña de stegosuite, comprueba que imagen del directorio contiene el hash dado y utiliza stegosuite para desvelar el mensaje oculto de dicha imagen.
 
@@ -26,4 +26,4 @@ Dados un directorio con imágenes, un hash a comparar y la contraseña de stegos
 ./steganos "/ejemplo/imágenes" "250ac5b66818a143eb9e9e78551b9436" "Contraseña"
 ```
 
-## 
+### 
