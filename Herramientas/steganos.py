@@ -5,8 +5,9 @@ import os
 
 args = sys.argv[1:] # Almacenamos en un array los argumentos de la terminal.
 
+# Comprueba si el usuario solicita una explicación del método de uso o si los argumentos están en un formato correcto.
 for arg in args:
-	if arg == "-h" or arg == "--h" or arg == "-help" or arg == "--help":
+	if arg == "-h" or arg == "--h" or arg == "-help" or arg == "--help" or len(args)!=3:
 		print("Método de uso:\n" + sys.argv[0] + " {directorio con las imágenes} {hash a comparar} {contraseña de stegosuite}")
 		exit()
 
