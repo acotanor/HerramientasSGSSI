@@ -16,4 +16,5 @@ fotos=os.popen("ls " + args[0]).read().split() # Almacenamos en un array todas l
 # Compara los hashes de cada foto con el hash dado por el terminal.
 for i in range(len(fotos)):
 	if args[1]==os.popen("(md5sum \"" + args[0] + "/" + fotos[i] + "\" | awk \'{print $1}\')").read().strip("\n"):
-		os.system("stegosuite extract " + args[0] + "/" + fotos[i] + " -k \"" + args[2] + "\"")
+		print(fotos[i])
+		#os.system("stegosuite extract " + args[0] + "/" + fotos[i] + " -k \"" + args[2] + "\"")
